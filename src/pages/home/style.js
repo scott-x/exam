@@ -8,16 +8,18 @@ export const H3=styled.div`
    font-weight:bold;
    text-align:left;
    margin-bottom:5px;
+   line-height:20px;
    color:red;
 `;
 
 export const Item=styled.div`
+   font-family:"Arial";
    margin-left:8px;
    font-size: 13px;
    text-align:left;
    color: #fff;
+   margin-bottom:4px;
 `;
 
 export const Question=styled.div`
-  
 `;
