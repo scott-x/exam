@@ -15,10 +15,11 @@ export const H3=styled.div`
 export const Item=styled.div`
    font-family:"Arial";
    margin-left:8px;
+   line-height:16px;
    font-size: 13px;
    text-align:left;
    color: #fff;
-   margin-bottom:4px;
+   margin-bottom:2px;
 `;
 
 export const Question=styled.div`
