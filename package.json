@@ -1,0 +1,34 @@
+{
+  "name": "exam",
+  "version": "0.1.0",
+  "private": true,
+  "author": "Scott Xiong",
+  "homepage": "./",
+  "dependencies": {
+    "antd": "^3.23.6",
+    "axios": "^0.18.0",
+    "immutable": "^3.8.2",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-loadable": "^5.5.0",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.4",
+    "react-transition-group": "^2.4.0",
+    "redux": "^4.0.0",
+    "redux-immutable": "^4.0.0",
+    "redux-thunk": "^2.3.0",
+    "styled-components": "3.4.9"
+  },
+  "scripts": {
+    "start": "concurrently \"react-scripts start\" \"json-server --watch db.json --port 8000\" ",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "json-server": "^0.14.2"
+  },
+  "proxy": "http://localhost:8000"
+}
