@@ -2,14 +2,14 @@
 * @Author: apple
 * @Date:   2019-10-09 20:44:34
 * @Last Modified by:   scottxiong
-* @Last Modified time: 2019-10-09 23:47:24
+* @Last Modified time: 2019-10-10 15:22:11
 */
 
 @media screen and (max-width: 740px) {
   body{
-	background: url("./pages/home/1.jpeg");
+	/*background: url("./pages/home/1.jpeg");
 	background-repeat: no-repeat;
-	background-size: 100% 100%;
+	background-size: 100% 100%;*/
    }
    div.active{
    	 color: #333;
@@ -18,18 +18,18 @@
 
 @media screen and (min-width: 741px) and (max-width: 1160px) {
   body{
-	background: url("./pages/home/1.jpg");
+	/*background: url("./pages/home/1.jpg");
 	background-repeat: no-repeat;
-	background-size: 100% 100%;
+	background-size: 100% 100%;*/
    }
 }
 
 
 @media screen and (min-width: 1160px)  {
   body{
-	background: url("./pages/home/2.jpeg");
+	/*background: url("./pages/home/2.jpeg");
 	background-repeat: no-repeat;
-	background-size: 100% 100%;
+	background-size: 100% 100%;*/
    }
 }
 
