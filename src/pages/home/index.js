@@ -544,7 +544,7 @@ class Home extends PureComponent {
              <Button style={{marginTop:"20px"}} onClick={this.random}>下一题</Button>
            }  
            <div></div>
-           <TextArea style={{width:"500px",height:"200px",marginLeft:"0px",marginTop:"10px",resize:"none",color:"#e96fc3"}} value={this.state.textAreaValue} onChange={this.areaChanged}></TextArea>
+           <TextArea style={{width:"500px",height:"200px",marginLeft:"0px",marginTop:"10px",resize:"none",color:"black"}} value={this.state.textAreaValue} onChange={this.areaChanged}></TextArea>
          </Fixed>  
         
         </HomeWrapper>   
