@@ -858,7 +858,7 @@ class Home extends PureComponent {
   	this.setState({
   		// show:false,
       textAreaValue:"",
-  		current:this.state.current-1
+  		current:this.state.current>0?this.state.current-1:0
   	})
   }
 
@@ -866,7 +866,7 @@ class Home extends PureComponent {
     this.setState({
     	// show:false,
       textAreaValue:"",
-  		current:this.state.current+1
+  		current:this.state.current==this.data.length?this.state.current:this.state.current+1
   	})
   }
   eye(){
