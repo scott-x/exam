@@ -2,7 +2,7 @@
 * @Author: apple
 * @Date:   2019-10-09 20:44:34
 * @Last Modified by:   scottxiong
-* @Last Modified time: 2019-10-10 15:22:11
+* @Last Modified time: 2019-11-23 16:11:31
 */
 
 @media screen and (max-width: 740px) {
@@ -21,6 +21,10 @@
 	/*background: url("./pages/home/1.jpg");
 	background-repeat: no-repeat;
 	background-size: 100% 100%;*/
+
+   }
+   textarea{
+   	width: 720px;
    }
 }
 
@@ -30,6 +34,9 @@
 	/*background: url("./pages/home/2.jpeg");
 	background-repeat: no-repeat;
 	background-size: 100% 100%;*/
+   }
+   textarea{
+   	width: 720px;
    }
 }
 

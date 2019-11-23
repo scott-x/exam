@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 export const HomeWrapper=styled.div` 
    height:100%;
+   max-width:900px;
 `;
 export const H3=styled.div`
    margin-top:20px;
@@ -14,12 +15,12 @@ export const H3=styled.div`
 
 export const Item=styled.div`
    font-family:"Arial";
-   margin-left:38px;
-   line-height:16px;
+   margin-left:42px;
+   line-height:18px;
    font-size: 13px;
    text-align:left;
    color: #666;
-   margin-bottom:2px;
+   margin-bottom:1px;
 `;
 
 export const Question=styled.div`
