@@ -1,18 +1,18 @@
 import React, { PureComponent,Fragment } from 'react';
 import Header from '../../common/header'
 
-import {
-	HomeWrapper,
-	H3,
-	Item,
-	Question
-} from './style';
-
 import { 
   Icon,
   Input,
   Tag
 } from "antd";
+
+import {
+  HomeWrapper,
+  H3,
+  Item,
+  Question
+} from './style';
 
 import "./style.css";
 
@@ -866,7 +866,7 @@ class Home extends PureComponent {
     this.setState({
     	// show:false,
       textAreaValue:"",
-  		current:this.state.current==this.data.length?this.state.current:this.state.current+1
+  		current:this.state.current===this.state.data.length?this.state.current:this.state.current+1
   	})
   }
   eye(){
@@ -895,8 +895,8 @@ class Home extends PureComponent {
             this.state.data.map((item,index)=>{
               return (<Question key = {index} className={this.state.current===index?"active":"inactive"}>
                <H3> <Icon onClick={this.eye} type={this.state.show?"eye":"eye-invisible"} /> {index+1}. {item.title}
-                  <Tag className={this.state.current===0?"inactive":"active"} style={{marginLeft:"20px",marginRight:"10px"}} onClick={this.prevous}>上一题</Tag>
-                <Tag className={this.state.current===this.state.data.length-1?"inactive":"active"} onClick={this.next}>下一题</Tag>
+                  <Tag className={this.state.current===0?"inactive":"active"} style={{marginLeft:"6px",marginRight:"6px"}} onClick={this.prevous}>上一题</Tag>
+                <Tag style={{marginLeft:"6px"}} className={this.state.current===this.state.data.length-1?"inactive":"active"} onClick={this.next}>下一题</Tag>
                </H3>
               
                {
@@ -910,7 +910,7 @@ class Home extends PureComponent {
              )
             }):
            <Question >
-               <H3><Icon onClick={this.eye} type={this.state.show?"eye":"eye-invisible"} /> {this.state.randomData+1}. {this.state.data[this.state.randomData].title} <Tag style={{marginLeft:"10px"}} onClick={this.random}>下一题</Tag></H3> 
+               <H3><Icon onClick={this.eye} type={this.state.show?"eye":"eye-invisible"} /> {this.state.randomData+1}. {this.state.data[this.state.randomData].title} <Tag style={{marginLeft:"6px"}} onClick={this.random}>下一题</Tag></H3> 
                
                {
                  this.state.data[this.state.randomData].answer.map((k,v)=>{
