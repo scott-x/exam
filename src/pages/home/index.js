@@ -1,8 +1,5 @@
 import React, { PureComponent,Fragment } from 'react';
 import Header from '../../common/header'
-import { 
-  Input
-} from "antd";
 
 import {
   HomeWrapper,
@@ -826,12 +823,12 @@ class Home extends PureComponent {
 
 
   }	
-  componentDidMount() {
+  // componentDidMount() {
  
-  // 注册浏览器尺寸变化监听事件， 刷新桌面尺寸
-  window.addEventListener('resize', this.handleSize);
+  // // 注册浏览器尺寸变化监听事件， 刷新桌面尺寸
+  // window.addEventListener('resize', this.handleSize);
    
-  }
+  // }
    
   componentWillUnmount() {
       // 移除监听事件
@@ -883,8 +880,8 @@ class Home extends PureComponent {
   }
   
   render() {
-    const { TextArea } = Input;
-    const { deskHeight } = this.state;
+    // const { TextArea } = Input;
+    // const { deskHeight } = this.state;
 
     return (
       <Fragment>
@@ -940,14 +937,20 @@ class Home extends PureComponent {
          <Box>
             {
               this.state.show?
-              <Open onClick={this.eye.bind(this)}></Open>
+              <Open onClick={this.eye.bind(this)} ></Open>
               :
               <Close onClick={this.eye.bind(this)}></Close>
             }
             {
               this.state.model===1?
               <Fragment>
-                <Prev onClick= {this.previous.bind(this)}></Prev>
+                {
+                  this.state.current>0?
+                  <Prev onClick= {this.previous.bind(this)} ></Prev>
+                  :
+                  ""
+                }
+                
                 <Next onClick= {this.next.bind(this)}></Next>
               </Fragment>
               :

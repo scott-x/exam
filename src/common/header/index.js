@@ -1,15 +1,15 @@
 import React, { PureComponent } from 'react';
-import {HeaderWrapper,H3,LogoWrapper,ContentWrapper,SelectWrapper} from './style';
+import {HeaderWrapper,H3,LogoWrapper,ContentWrapper} from './style';
 import {
-	Radio,
-  Icon
+	Radio
+  
 } from "antd";
 
 import { Logo } from '../../pages/home/style';
 
 class Header extends PureComponent {
   render() {
-  	const { model,eye,show,onChange,previous,next,random,current} = this.props;
+  	const { model,onChange} = this.props;
     return (
      <HeaderWrapper className="header"> 
      <LogoWrapper>
