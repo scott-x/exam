@@ -6,8 +6,8 @@ export const HeaderWrapper=styled.div`
   position:relative;
 `;
 export const H3=styled.div`
-   font-size:18px;
-   line-height:70px;
+   font-size:16px;
+   line-height:50px;
    color:#f60;
    font-weight:bold;
 `;
@@ -18,7 +18,7 @@ export const Logo=styled.div`
 `;
 
 export const LogoWrapper=styled.div` 
-   width:75px;
+   width:100px;
    height:75px;
    float:left;
 `;

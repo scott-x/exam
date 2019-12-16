@@ -8,12 +8,20 @@ import {
   HomeWrapper,
   H3,
   Item,
-  Question
+  Question,
+  Prev,
+  Next,
+  Open,
+  Close,
+  Box
 } from './style';
 
 import "./style.css";
 
 class Home extends PureComponent {
+  componentDidMount(){
+  
+  }
   constructor(props){
   	super(props)
   	this.state = {
@@ -884,7 +892,6 @@ class Home extends PureComponent {
           model={this.state.model} 
           current = {this.state.current}
           show={this.state.show} 
-          eye={this.eye.bind(this)} 
           previous = {this.previous.bind(this)} 
           random = {this.random.bind(this)}
           next = {this.next.bind(this)}
@@ -919,13 +926,36 @@ class Home extends PureComponent {
                
           </Question>
         }
+         {
+           /*
+              <div ref={this.saveRef} style={{boxSizing:"border-box",marginLeft:"40px",marginRight:"40px",marginTop:"10px",maxWidth:"600px"}} >
+                          <TextArea    style={{boxSizing:"border-box",resize:"none",height: deskHeight-400}} value={this.state.textAreaValue} onChange={this.areaChanged}></TextArea>
+              </div>
+           */
+         }
          
-          <div ref={this.saveRef} style={{boxSizing:"border-box",marginLeft:"40px",marginRight:"40px",marginTop:"10px",maxWidth:"600px"}} >
-                      <TextArea    style={{boxSizing:"border-box",resize:"none",height: deskHeight-400}} value={this.state.textAreaValue} onChange={this.areaChanged}></TextArea>
-          </div>
+          
        
         </HomeWrapper>   
-
+         <Box>
+            {
+              this.state.show?
+              <Open onClick={this.eye.bind(this)}></Open>
+              :
+              <Close onClick={this.eye.bind(this)}></Close>
+            }
+            {
+              this.state.model===1?
+              <Fragment>
+                <Prev onClick= {this.previous.bind(this)}></Prev>
+                <Next onClick= {this.next.bind(this)}></Next>
+              </Fragment>
+              :
+              <Next onClick= {this.random.bind(this)}></Next>
+            }
+      
+          </Box>
+        
       </Fragment>
     );
   }
