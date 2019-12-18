@@ -5,7 +5,7 @@ import {
   
 } from "antd";
 
-import { Logo } from '../../pages/home/style';
+import { Scott } from '../home/style';
 
 class Header extends PureComponent {
   render() {
@@ -13,10 +13,12 @@ class Header extends PureComponent {
     return (
      <HeaderWrapper className="header"> 
      <LogoWrapper>
-        <Logo/>
+        <a href="/">
+           <Scott/>
+        </a>
      </LogoWrapper>
      <ContentWrapper>
-       <H3> <span>考试冲刺</span> 
+       <H3> <span></span> 
         <Radio.Group onChange={onChange} value={model} style={{marginLeft:"10px"}}>
         <Radio value={1} style={{color:"green",fontSize:"12px"}}>一般</Radio>
         <Radio value={2} style={{color:"green",fontSize:"12px"}}>随机</Radio>
